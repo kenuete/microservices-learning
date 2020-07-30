@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <article class="speakerslist maincontent">
+                <h1 class="speakerslist-title"><%= speakerDetail.title %> </h1>
+                <div class="speakerslist-name">with
+                    <a href="/speakers/<%= speakerDetail.shortname %>"><%= speakerDetail.name %></a>
+                </div>
+                <p class="speakerslist-info mt-2"> <a href="./speakers/<%= speakerDetail.shortname %>">
+                    </a>
+                    <img class="speakerslist-img img-fluid" src="/images/speakers/<%= speakerDetail.shortname %>.jpg"
+                        alt="Photo of <%= speakerDetail.name %>">
+                </p>
+                <%- speakerDetail.description %>
+                <p></p>
+            </article>
+        </div>
+        <aside class="col-md-4">
+            <%- include('./partials/artwork') %>
+        </aside>
+    </div>
+</div>

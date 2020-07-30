@@ -1,0 +1,29 @@
+{
+  "name": "service-registry",
+  "version": "1.0.0",
+  "description": "A generic service registry for Node.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node bin/run | bunyan",
+    "start1": "nodemon --exec babel-node bin/run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-node": "0.0.1-security",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "bunyan": "^1.8.12",
+    "express": "^4.16.4",
+    "semver": "^7.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
+  }
+}
